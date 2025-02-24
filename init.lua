@@ -581,6 +581,9 @@ require('lazy').setup({
         vim.lsp.config(name, server)
         vim.lsp.enable(name)
       end
+
+      -- Enable LSPs not installed by Mason
+      require('lspconfig').rust_analyzer.setup {}
     end,
   },
 
