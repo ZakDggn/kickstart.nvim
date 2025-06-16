@@ -31,7 +31,7 @@ vim.o.showmode = false
 vim.schedule(function() vim.o.clipboard = 'unnamedplus' end)
 
 -- Disable line wrapping
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 -- Enable break indent
 vim.o.breakindent = true
@@ -65,7 +65,8 @@ vim.o.splitbelow = true
 --   See `:help lua-options`
 --   and `:help lua-guide-options`
 vim.o.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣', extends = '»', precedes = '«' }
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣', extends = '›', precedes = '‹' }
+vim.opt.showbreak = '⤷ '
 
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
