@@ -584,7 +584,7 @@ require('lazy').setup({
       end
 
       -- Enable LSPs not installed by Mason
-      require('lspconfig').rust_analyzer.setup {}
+      vim.lsp.enable 'rust_analyzer'
     end,
   },
 
